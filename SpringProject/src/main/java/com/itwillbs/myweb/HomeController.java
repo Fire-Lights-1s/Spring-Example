@@ -35,5 +35,11 @@ public class HomeController {
 		
 		return "home";
 	}
-	
+//	@RequestMapping(value = "/insert", method = RequestMethod.GET)
+//	public String insert() {
+//		
+//		Date date = new Date();
+//		
+//		return "insert";
+//	}
 }
