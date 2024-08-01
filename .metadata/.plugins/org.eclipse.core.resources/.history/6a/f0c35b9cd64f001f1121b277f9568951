@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="memberController" class="com.itwillbs.controller.MemberController">
+		<!--   set메서드 호출 name="set메서드이름" ref="전달할 객체생성값"  -->
+		<property name="memberService" ref="memberService"/>
+	</bean>
+	<!--  
+		MemberService 부모 인터페이스 = MemberServiceImpl 객체생성 
+		MemberService memberService = new MemberServiceImpl();
+		 -->
+	<bean id="memberService" class="com.itwillbs.service.MemberServiceImpl">
+		<property name="memberDAO" ref="memberDAO"/>
+	</bean>
+	<!--  MemberDAO 부모 인터페이스 = MemberDAOImpl 객체생성  -->
+	<bean id="memberDAO" class="com.itwillbs.dao.MemberDAOImpl"/>
+	
+</beans>

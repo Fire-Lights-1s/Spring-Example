@@ -1,0 +1,46 @@
+package com.itwillbs.service;
+
+import java.sql.SQLException;
+import java.sql.Timestamp;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import com.itwillbs.dao.MemberDAO;
+import com.itwillbs.dao.MemberDAOImpl;
+import com.itwillbs.domain.MemberDTO;
+
+public class MemberServiceImpl implements MemberService{
+	MemberDAOImpl memberDAOImpl = new MemberDAOImpl();
+	public boolean insertMember(MemberDTO memberDTO) {
+		boolean result = false;
+		System.out.println("MemberServiceImpl inserMember()");
+		boolean idCheck = false, passCheck = false, nameCheck = false;
+		
+		if(memberDTO.getId() != null && !memberDTO.getId().equals("")){
+			idCheck = true;
+		}
+		if(memberDTO.getPass() != null && !memberDTO.getPass().equals("")){
+			passCheck = true;
+		}
+		if(memberDTO.getName() != null && !memberDTO.getName().equals("")){
+			nameCheck = true;
+		}
+		memberDTO.setDate(new Timestamp(System.currentTimeMillis()));
+		
+		if(idCheck && passCheck && nameCheck){
+			try {
+				memberDAOImpl.insertMember(memberDTO);
+				result = true;
+			} catch (SQLException e) {
+				e.printStackTrace();
+				System.out.println("유저 생성 실패");
+				result = false;
+			}
+		}else{
+//			HttpSession session = request.getSession();
+//			session.setAttribute("resultM", "필수 정보가 없음");
+		}//if check
+		return result;
+	}// insertMember()
+}

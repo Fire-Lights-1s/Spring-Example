@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="com.itwillbs.dao.MemberDAOImpl"/>
+    <fullyQualifiedTypeName name="com.itwillbs.dao.MemberDAOImpl2"/>
+    <fullyQualifiedTypeName name="com.itwillbs.service.MemberServiceImpl2"/>
+    <fullyQualifiedTypeName name="com.itwillbs.domain.MemberDTO"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="com.itwillbs.service.MemberService"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="com.itwillbs.service.MemberServiceImpl"/>
+    <fullyQualifiedTypeName name="javax.inject.Inject"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.core.simple.SimpleJdbcTemplate"/>
+    <fullyQualifiedTypeName name="com.itwillbs.dao.MemberDAO"/>
 </qualifiedTypeNameHistroy>

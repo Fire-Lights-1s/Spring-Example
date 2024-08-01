@@ -1,0 +1,13 @@
+package com.itwillbs.service;
+
+import com.itwillbs.dao.MemberDAOImpl2;
+import com.itwillbs.domain.MemberDTO;
+
+public class MemberServiceImpl2 implements MemberService{
+	public boolean insertMember(MemberDTO memberDTO) {
+		System.out.println("MemberServiceImpl2 insertMember()");
+		MemberDAOImpl2 memberDAOImpl2 = new MemberDAOImpl2();
+		memberDAOImpl2.insertMember(memberDTO);
+		return false;
+	}
+}

@@ -1,0 +1,9 @@
+package com.itwillbs.dao;
+
+import com.itwillbs.domain.MemberDTO;
+
+public class MemberDAOImpl2 {
+	public void insertMember2(MemberDTO memberDTO) {
+		System.out.println("MemberDAOImpl2 insertMember2()");
+	}
+}

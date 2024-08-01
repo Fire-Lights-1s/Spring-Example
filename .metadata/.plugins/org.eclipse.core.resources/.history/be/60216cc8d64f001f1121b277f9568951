@@ -1,0 +1,57 @@
+package com.itwillbs.service;
+
+import javax.inject.Inject;
+
+import com.itwillbs.dao.MemberDAO;
+import com.itwillbs.dao.MemberDAOImpl;
+import com.itwillbs.dao.MemberDAOImpl2;
+import com.itwillbs.domain.MemberDTO;
+
+public class MemberServiceImpl implements MemberService{
+	
+//	// 부모 = 자식 객체생성
+//	MemberDAO memberDAO = new MemberDAOImpl();
+	// 멤버변수
+	private MemberDAO memberDAO;
+	// set메서드  외부에서 객체생성한 값을 받을 준비
+	@Inject
+	public void setMemberDAO(MemberDAO memberDAO) {
+		this.memberDAO = memberDAO;
+	}
+	
+	@Override
+	public void insertMember(MemberDTO memberDTO) {
+		System.out.println("MemberServiceImpl insertMember()");
+		
+		//회원가입처리 메서드 호출
+		// com.itwillbs.dao.MemberDAOImpl 자바파일 만들기
+		// 리턴할형 없음 insertMember(MemberDTO memberDTO) 메서드 정의
+		
+//		// MemberDAOImpl 객체생성
+//		MemberDAOImpl memberDAOImpl = new MemberDAOImpl();
+//		// insertMember(memberDTO) 메서드 호출
+//		memberDAOImpl.insertMember(memberDTO);
+		
+//		// 부모 = 자식 객체생성
+//		MemberDAO memberDAO = new MemberDAOImpl();
+		memberDAO.insertMember(memberDTO);
+	}
+
+//	// 리턴할형 없음 insertMember(MemberDTO memberDTO) 메서드 정의
+//	public void insertMember(MemberDTO memberDTO) {
+//		System.out.println("MemberServiceImpl insertMember()");
+//		
+//		//회원가입처리 메서드 호출
+//		// com.itwillbs.dao.MemberDAOImpl 자바파일 만들기
+//		// 리턴할형 없음 insertMember(MemberDTO memberDTO) 메서드 정의
+//		
+//		// MemberDAOImpl 객체생성
+//		MemberDAOImpl memberDAOImpl = new MemberDAOImpl();
+//		// insertMember(memberDTO) 메서드 호출
+//		memberDAOImpl.insertMember(memberDTO);
+//		
+//		
+//	}//insertMember()
+	
+
+}//클래스

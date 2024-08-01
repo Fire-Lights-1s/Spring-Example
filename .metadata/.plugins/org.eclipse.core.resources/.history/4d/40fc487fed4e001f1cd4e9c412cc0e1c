@@ -1,0 +1,20 @@
+package com.itwillbs.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
+
+public interface MemberDAO {
+	Connection conn = null;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	public void connection();// connection
+	
+	public void dbClose();//dbClose()
+	public void insertMember();
+}

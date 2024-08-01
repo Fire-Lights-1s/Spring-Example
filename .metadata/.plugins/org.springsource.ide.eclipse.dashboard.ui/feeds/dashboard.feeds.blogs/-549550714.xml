@@ -1,4 +1,145 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 30 Jul 2024 00:29:31 GMT</lastBuildDate><item><title><![CDATA[This Week in Spring - July 29th, 2024]]></title><link>https://spring.io/blog/2024/07/29/this-week-in-spring-july-29th-2024</link><guid isPermaLink="true">https://spring.io/blog/2024/07/29/this-week-in-spring-july-29th-2024</guid><dc:creator><![CDATA[Josh Long]]></dc:creator><pubDate>Tue, 30 Jul 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! It&apos;s July 29th, 2024! I can hardly believe it! We&apos;re less than a month away from SpringOne 2024! &lt;a href=&quot;https://springone.io&quot;&gt;Have you registered for either in-person attendance or the free livestreams yet&lt;/a&gt;?  As always, we&apos;ve got a ton of stuff to cover so let&apos;s dive right into it!&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 01 Aug 2024 07:33:17 GMT</lastBuildDate><item><title><![CDATA[Spring Tips: Spring Security method security with special guest Rob Winch]]></title><link>https://spring.io/blog/2024/07/31/spring-tips-spring-security-method-security-with-special-guest-rob-winch</link><guid isPermaLink="true">https://spring.io/blog/2024/07/31/spring-tips-spring-security-method-security-with-special-guest-rob-winch</guid><dc:creator><![CDATA[Josh Long]]></dc:creator><pubDate>Wed, 31 Jul 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi, Spring fans! In this installment I have special guest Spring Security lead Rob Winch give us a master class in how the method security support works and some of its new features. Come for the security, stay for the incredible opportunity to look over a senior engineer&apos;s shoulders as he explains the nuances of API design!&lt;/p&gt;
+&lt;p&gt;#springboot #springsecurity #springframework #java #security #apidevelopment #softwaredevelopment #architecture&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/JYZHp5eqS2I?si=aEgSG3I_SdxVA6kU&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;/iframe&gt;</content:encoded></item><item><title><![CDATA[Spring AI with Groq - a blazingly fast AI inference engine]]></title><link>https://spring.io/blog/2024/07/31/spring-ai-with-groq-a-blazingly-fast-ai-inference-engine</link><guid isPermaLink="true">https://spring.io/blog/2024/07/31/spring-ai-with-groq-a-blazingly-fast-ai-inference-engine</guid><dc:creator><![CDATA[Christian Tzolov]]></dc:creator><pubDate>Wed, 31 Jul 2024 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;Faster information processing not only informs - it transforms how we perceive and innovate.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.spring.io/spring-ai/reference/&quot;&gt;Spring AI&lt;/a&gt;, a powerful framework for integrating AI capabilities into Spring applications, now offers support for &lt;a href=&quot;https://groq.com/&quot;&gt;Groq&lt;/a&gt; - a blazingly fast AI inference engine with support for Tool/Function calling.&lt;/p&gt;
+&lt;p&gt;Leveraging Groq&apos;s OpenAI-compatible API, Spring AI seamlessly integrates by adapting its existing &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/chat/openai-chat.html&quot;&gt;OpenAI Chat&lt;/a&gt; client.
+This approach enables developers to harness Groq&apos;s high-performance models through the familiar Spring AI API.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//images.ctfassets.net/mnrwi97vnhts/1jCKEN83AUUV7AAQefxvlt/d74b870bae28ed447d8588eb178bfa79/spring-ai-groq-integration.jpg&quot; alt=&quot;spring-ai-groq-integration&quot;&gt;&lt;/p&gt;
+&lt;p&gt;We&apos;ll explore how to configure and use the Spring AI OpenAI chat client to connect with Groq.
+For detailed information, consult the Spring AI &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/chat/groq-chat.html&quot;&gt;Groq documentation&lt;/a&gt; and related &lt;a href=&quot;https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/test/java/org/springframework/ai/openai/chat/GroqWithOpenAiChatModelIT.java&quot;&gt;tests&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;groq-api-key&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#groq-api-key&quot; aria-label=&quot;groq api key permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Groq API Key&lt;/h1&gt;
+&lt;p&gt;To interact with Groq, you&apos;ll need to obtain a Groq API key from &lt;a href=&quot;https://console.groq.com/keys&quot;&gt;https://console.groq.com/keys&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;dependencies&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dependencies&quot; aria-label=&quot;dependencies permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dependencies&lt;/h1&gt;
+&lt;p&gt;Add the Spring AI OpenAI starter to your project.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;#x3C;dependency&gt;
+  &amp;#x3C;groupId&gt;org.springframework.ai&amp;#x3C;/groupId&gt;
+  &amp;#x3C;artifactId&gt;spring-ai-openai-spring-boot-starter&amp;#x3C;/artifactId&gt;
+&amp;#x3C;/dependency&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For Gradle, add this to your &lt;code&gt;build.gradle&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;dependencies {
+  implementation &apos;org.springframework.ai:spring-ai-openai-spring-boot-starter&apos;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ensure you&apos;ve added the Spring &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/getting-started.html#repositories&quot;&gt;Milestone and Snapshot repositories&lt;/a&gt; and add the &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/getting-started.html#dependency-management&quot;&gt;Spring AI BOM&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;configuring-spring-ai-for-groq&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#configuring-spring-ai-for-groq&quot; aria-label=&quot;configuring spring ai for groq permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configuring Spring AI for Groq&lt;/h1&gt;
+&lt;p&gt;To use Groq with Spring AI, we need to configure the OpenAI client to point to Groq&apos;s API endpoint and use Groq-specific models.&lt;/p&gt;
+&lt;p&gt;Add the following environment variables to your project:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;export SPRING_AI_OPENAI_API_KEY=&amp;#x3C;INSERT GROQ API KEY HERE&gt;  
+export SPRING_AI_OPENAI_BASE_URL=https://api.groq.com/openai  
+export SPRING_AI_OPENAI_CHAT_OPTIONS_MODEL=llama3-70b-8192
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alternatively, you can add these to your &lt;code&gt;application.properties&lt;/code&gt; file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;spring.ai.openai.api-key=&amp;#x3C;GROQ_API_KEY&gt;
+spring.ai.openai.base-url=https://api.groq.com/openai
+spring.ai.openai.chat.options.model=llama3-70b-8192
+spring.ai.openai.chat.options.temperature=0.7
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Key points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;api-key&lt;/code&gt; is set to one of your &lt;a href=&quot;https://console.groq.com/keys&quot;&gt;Groq keys&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;base-url&lt;/code&gt; is set to Groq&apos;s API endpoint: &lt;code&gt;https://api.groq.com/openai&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;model&lt;/code&gt; is set to one of Groq&apos;s available &lt;a href=&quot;https://console.groq.com/docs/models&quot;&gt;Models&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the complete list of configuration properties, consult the &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/chat/groq-chat.html#_chat_properties&quot;&gt;Groq chat properties&lt;/a&gt; documentation.&lt;/p&gt;
+&lt;h1 id=&quot;code-example&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#code-example&quot; aria-label=&quot;code example permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Code Example&lt;/h1&gt;
+&lt;p&gt;Now that we&apos;ve configured Spring AI to use Groq, let&apos;s look at a simple example of how to use it in your application.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@RestController
+public class ChatController {
+
+  private final ChatClient chatClient;
+
+  @Autowired
+  public ChatController(ChatClient.Builder builder) {
+      this.chatClient = builder.build();
+  }
+
+  @GetMapping(&quot;/ai/generate&quot;)
+  public Map generate(@RequestParam(value = &quot;message&quot;, defaultValue = &quot;Tell me a joke&quot;) String message) {
+     String response = chatClient.prompt().user(message).call().content();
+     return Map.of(&quot;generation&quot;, response);
+  }
+
+  @GetMapping(&quot;/ai/generateStream&quot;)
+  public Flux&amp;#x3C;String&gt; generateStream(@RequestParam(value = &quot;message&quot;, 
+        defaultValue = &quot;Tell me a joke&quot;) String message) {
+      return chatClient.prompt().user(message).stream().content();
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this example, we&apos;ve created a simple REST controller with two endpoints:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/ai/generate&lt;/code&gt;: Generates a single response to a given prompt.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/ai/generateStream&lt;/code&gt;: Streams the response, which can be useful for longer outputs or real-time interactions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;toolsfunctions&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#toolsfunctions&quot; aria-label=&quot;toolsfunctions permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tools/Functions&lt;/h1&gt;
+&lt;p&gt;Groq API endpoints support &lt;a href=&quot;https://console.groq.com/docs/tool-use&quot;&gt;tool/function calling&lt;/a&gt; when selecting one of the Tool/Function supporting models.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;//images.ctfassets.net/mnrwi97vnhts/3HRxhPSz4Evjks85ayzOEV/22106b2e2dce21ae930b29f5d34d8704/spring-ai-groq-functions-2.jpg&quot; alt=&quot;spring-ai-groq-functions-2&quot;&gt;&lt;/p&gt;
+&lt;p&gt;You can register custom Java functions with your ChatModel and have the provided Groq model intelligently choose to output a JSON object containing arguments to call one or many of the registered functions.
+This is a powerful technique to connect the LLM capabilities with external tools and APIs.&lt;/p&gt;
+&lt;h3 id=&quot;tool-example&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tool-example&quot; aria-label=&quot;tool example permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tool Example&lt;/h3&gt;
+&lt;p&gt;Here&apos;s a simple example of how to use Groq function calling with Spring AI:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@SpringBootApplication
+public class GroqApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(GroqApplication.class, args);
+	}
+
+	@Bean
+	CommandLineRunner runner(ChatClient.Builder chatClientBuilder) {
+		return args -&gt; {
+			var chatClient = chatClientBuilder.build();
+
+			var response = chatClient.prompt()
+				.user(&quot;What is the weather in Amsterdam and Paris?&quot;)
+				.functions(&quot;weatherFunction&quot;) // reference by bean name.
+				.call()
+				.content();
+
+			System.out.println(response);
+		};
+	}
+
+	@Bean
+	@Description(&quot;Get the weather in location&quot;)
+	public Function&amp;#x3C;WeatherRequest, WeatherResponse&gt; weatherFunction() {
+		return new MockWeatherService();
+	}
+
+	public static class MockWeatherService implements Function&amp;#x3C;WeatherRequest, WeatherResponse&gt; {
+
+		public record WeatherRequest(String location, String unit) {}
+		public record WeatherResponse(double temp, String unit) {}
+
+		@Override
+		public WeatherResponse apply(WeatherRequest request) {
+			double temperature = request.location().contains(&quot;Amsterdam&quot;) ? 20 : 25;
+			return new WeatherResponse(temperature, request.unit);
+		}
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In this example, when the model needs weather information, it will automatically call the &lt;code&gt;weatherFunction&lt;/code&gt; bean, which can then fetch real-time weather data.&lt;/p&gt;
+&lt;p&gt;The expected response looks like this: &quot;The weather in Amsterdam is currently 20 degrees Celsius, and the weather in Paris is currently 25 degrees Celsius.&quot;&lt;/p&gt;
+&lt;p&gt;Read more about OpenAI &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/chat/functions/openai-chat-functions.html&quot;&gt;Function Calling&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;key-considerations&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#key-considerations&quot; aria-label=&quot;key considerations permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Key Considerations&lt;/h1&gt;
+&lt;p&gt;When using Groq with Spring AI, keep the following points in mind:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tool/Function Calling: Groq &lt;a href=&quot;https://console.groq.com/docs/tool-use&quot;&gt;supports&lt;/a&gt; Tool/Function calling. Check for the recommended models to use.&lt;/li&gt;
+&lt;li&gt;API Compatibility: The Groq API is not fully compatible with the OpenAI API. Be aware of potential differences in behavior or features.&lt;/li&gt;
+&lt;li&gt;Model Selection: Ensure you&apos;re using one of the Groq-specific &lt;a href=&quot;https://console.groq.com/docs/models&quot;&gt;models&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Multimodal Limitations: Currently, Groq doesn&apos;t support multimodal messages.&lt;/li&gt;
+&lt;li&gt;Performance: Groq is known for its fast inference times. You may notice improved response speeds compared to other providers, especially for larger models.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Integrating Groq with Spring AI opens up new possibilities for developers looking to leverage high-performance AI models in their Spring applications.
+By repurposing the OpenAI client, Spring AI makes it straightforward to switch between different AI providers, allowing you to choose the best solution for your specific needs.&lt;/p&gt;
+&lt;p&gt;As you explore this integration, remember to stay updated with the latest documentation from both &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/index.html&quot;&gt;Spring AI&lt;/a&gt; and &lt;a href=&quot;https://console.groq.com/docs/quickstart&quot;&gt;Groq&lt;/a&gt;, as features and compatibility may evolve over time.&lt;/p&gt;
+&lt;p&gt;We encourage you to experiment with different Groq models and compare their performance and outputs to find the best fit for your use case.&lt;/p&gt;
+&lt;p&gt;Happy coding, and enjoy the speed and capabilities that Groq brings to your AI-powered Spring applications!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[This Week in Spring - July 29th, 2024]]></title><link>https://spring.io/blog/2024/07/29/this-week-in-spring-july-29th-2024</link><guid isPermaLink="true">https://spring.io/blog/2024/07/29/this-week-in-spring-july-29th-2024</guid><dc:creator><![CDATA[Josh Long]]></dc:creator><pubDate>Tue, 30 Jul 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! It&apos;s July 29th, 2024! I can hardly believe it! We&apos;re less than a month away from SpringOne 2024! &lt;a href=&quot;https://springone.io&quot;&gt;Have you registered for either in-person attendance or the free livestreams yet&lt;/a&gt;?  As always, we&apos;ve got a ton of stuff to cover so let&apos;s dive right into it!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;first, Ollama just announced support for tools, and &lt;a href=&quot;https://spring.io/blog/2024/07/26/spring-ai-with-ollama-tool-support&quot;&gt;that&apos;s now supported in Spring AI!&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;In last week&apos;s installment of &lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talked to cloud infrastructure legend &lt;a href=&quot;https://spring.io/blog/2024/07/25/a-bootiful-podcast-cloud-legend-mark-fynes&quot;&gt;Mark Fynes about Cloud Foundry, Kubernetes, continuous delivery&lt;/a&gt;, and so much more.&lt;/li&gt;
@@ -187,9 +328,4 @@ Here you can find the full change logs for the releases &lt;a href=&quot;https:/
 &lt;p&gt;Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;
 &lt;h3 id=&quot;how-can-you-help&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-can-you-help&quot; aria-label=&quot;how can you help permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
 &lt;p&gt;If you&apos;re interested in helping out, check out the &lt;a href=&quot;https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution&quot;&gt;&quot;ideal for contribution&quot; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href=&quot;https://stackoverflow.com&quot;&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href=&quot;https://stackoverflow.com/tags/spring-boot&quot;&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href=&quot;https://gitter.im/spring-projects/spring-boot&quot;&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-boot/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-boot&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-boot/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-boot/docs/3.4.0-M1/reference/html&quot;&gt;Documentation&lt;/a&gt; | &lt;a href=&quot;https://stackoverflow.com/questions/tagged/spring-boot&quot;&gt;Stack Overflow&lt;/a&gt; | &lt;a href=&quot;https://gitter.im/spring-projects/spring-boot&quot;&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Boot 3.3.2 available now]]></title><link>https://spring.io/blog/2024/07/18/spring-boot-3-3-2-available-now</link><guid isPermaLink="true">https://spring.io/blog/2024/07/18/spring-boot-3-3-2-available-now</guid><dc:creator><![CDATA[Andy Wilkinson]]></dc:creator><pubDate>Thu, 18 Jul 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I&apos;m happy to announce that Spring Boot &lt;code&gt;3.3.2&lt;/code&gt; has been released and is now available from Maven Central.&lt;/p&gt;
-&lt;p&gt;This release includes &lt;a href=&quot;https://github.com/spring-projects/spring-boot/releases/tag/v3.3.2&quot;&gt;50 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;
-&lt;h3 id=&quot;how-can-you-help&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-can-you-help&quot; aria-label=&quot;how can you help permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&apos;re interested in helping out, check out the &lt;a href=&quot;https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution&quot;&gt;&quot;ideal for contribution&quot; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href=&quot;https://stackoverflow.com&quot;&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href=&quot;https://stackoverflow.com/tags/spring-boot&quot;&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href=&quot;https://gitter.im/spring-projects/spring-boot&quot;&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-boot/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-boot&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-boot/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-boot/docs/3.3.2/reference/html&quot;&gt;Documentation&lt;/a&gt; | &lt;a href=&quot;https://stackoverflow.com/questions/tagged/spring-boot&quot;&gt;Stack Overflow&lt;/a&gt; | &lt;a href=&quot;https://gitter.im/spring-projects/spring-boot&quot;&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A Bootiful Podcast: Digital Accessibility Architect, Java and Groovy legend, Scott Davis]]></title><link>https://spring.io/blog/2024/07/18/a-bootiful-podcast-digital-accessibility-architect-java-and-groovy-legend</link><guid isPermaLink="true">https://spring.io/blog/2024/07/18/a-bootiful-podcast-digital-accessibility-architect-java-and-groovy-legend</guid><dc:creator><![CDATA[Josh Long]]></dc:creator><pubDate>Thu, 18 Jul 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hi, Spring fans! In this episode I talk to Java ecosystem legend Scott Davis&lt;/p&gt;
-&lt;iframe title=&quot;Digital Accessibility Architect, Java and Groovy legend, Scott Davis&quot; allowtransparency=&quot;true&quot; height=&quot;150&quot; width=&quot;100%&quot; style=&quot;border: none; min-width: min(100%, 430px);height:150px;&quot; scrolling=&quot;no&quot; data-name=&quot;pb-iframe-player&quot; src=&quot;https://www.podbean.com/player-v2/?i=2xr4k-1671e9a-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;logo_link=episode_page&amp;btn-skin=7&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-boot/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-boot&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-boot/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-boot/docs/3.4.0-M1/reference/html&quot;&gt;Documentation&lt;/a&gt; | &lt;a href=&quot;https://stackoverflow.com/questions/tagged/spring-boot&quot;&gt;Stack Overflow&lt;/a&gt; | &lt;a href=&quot;https://gitter.im/spring-projects/spring-boot&quot;&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>

@@ -14,9 +14,6 @@
 </head>
 <body>
 	<h1>member/insert.jsp</h1>
-	<% %>
-	${pageContext.request.contextPath}
-	${pageContext.request.servletPath}
 	<form action="${pageContext.request.contextPath}/member/insertPro" method="post">
 		<table>
 			<tr>

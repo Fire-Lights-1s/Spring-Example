@@ -1,0 +1,9 @@
+package com.itwillbs.service;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.itwillbs.domain.MemberDTO;
+
+public interface MemberService {
+	abstract public boolean insertMember(MemberDTO memberDTO,HttpServletRequest request);
+}

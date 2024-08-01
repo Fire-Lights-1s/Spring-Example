@@ -1,0 +1,14 @@
+package com.itwillbs.service;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.itwillbs.domain.MemberDTO;
+
+public interface MemberService {
+	// 자식클래스의 공통적인 부모의 메서드 틀
+	// 인터페이스를 상속받은 자식클래스가 공통메서드 틀을 받아서 구현 
+	
+	// 추상메서드(메서드 틀)
+	public void insertMember(MemberDTO memberDTO, HttpServletRequest request);
+	
+}
